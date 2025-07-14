@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Кнопка "Смотреть" для кинопоиска
+// @name         Кнопка "Смотреть сейчас" для кинопоиска
 // @namespace    http://tampermonkey.net/
 // @version      2025-07-14
-// @description  Добавляет кнопку "Смотреть" на странице сериала на кинопоиске
+// @description  Добавляет кнопку "Смотреть сейчас" на странице сериала на кинопоиске
 // @author       @grut
 // @match        https://www.kinopoisk.ru/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=kinopoisk.ru
