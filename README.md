@@ -6,6 +6,17 @@
 
 Простейший скрипт для [Кинопоиска](https://www.kinopoisk.ru/), добавляющий кнопку "Смотреть сейчас" с кастомной ссылкой. Позволяет быстро переходить на страницу просмотра фильма/сериала на иных сайтах.
 
+<figure>
+  <img src="assets/before.png" alt="before" width="500">
+  <figcaption>До установки скрипта</figcaption>
+</figure>
+
+
+<figure>
+  <img src="assets/after.png" alt="after" width="500">
+  <figcaption>После установки скрипта</figcaption>
+</figure>
+
 ## Использование
 
 1. Установите расширение [Tampermonkey](https://www.tampermonkey.net/) для вашего браузера.

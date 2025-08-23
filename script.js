@@ -12,6 +12,8 @@
 (function () {
     'use strict';
 
+    // Домен, на который будет заменяться домен kinopoisk.ru, по умолчанию sspoisk.ru,
+    // можно спокойно изменить на любой другой домен
     const DEFAULT_REPLACE_DOMAIN = 'sspoisk.ru';
 
     /**
@@ -34,17 +36,17 @@
         const buttonsContainer = document.querySelector('.styles_buttonsContainer__Kcrch');
         if (!buttonsContainer) return;
 
-        // Уже добавлено?
-        if (buttonsContainer.querySelector('[data-sspoisk-btn="true"]')) {
+        // Кнопка уже добавлена?
+        if (buttonsContainer.querySelector('[data-kinopoisk-watch-now-button="true"]')) {
             return;
         }
 
         // Создаем новую кнопку
         const newBtn = document.createElement('button');
-        newBtn.className = 'style_button__Awsrq style_buttonSize52__MBeHC style_buttonPrimary__Qn_9l style_buttonLight__C8cK7 style_withIconLeft__USlpL';
+        newBtn.className = 'style_button__Awsrq style_buttonSize52__MBeHC style_buttonPrimary__Qn_9l style_buttonLight__C8cK7 style_withIconLeft__USlpL kinopoisk-watch-now-button';
         newBtn.title = 'Смотреть сейчас';
         newBtn.setAttribute('aria-pressed', 'false');
-        newBtn.dataset.sspoiskBtn = 'true';
+        newBtn.dataset.kinopoiskWatchNowButton = 'true';
 
         // Создаем иконку play
         const playIcon = document.createElement('span');
@@ -90,6 +92,5 @@
         addWatchButton();
     });
     observer.observe(document.body, { childList: true, subtree: true });
-    // Добавляем сразу, если кнопка уже есть
     addWatchButton();
 })();
