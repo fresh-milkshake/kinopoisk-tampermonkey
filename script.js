@@ -9,6 +9,7 @@
 // @match        https://www.google.ru/search*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=kinopoisk.ru
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function () {
